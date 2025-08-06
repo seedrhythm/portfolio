@@ -37,6 +37,18 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #FFC0CB;
     }
+body#news nav ul li#nav-news {
+    background-color: #317f8d;
+} 
+body#blog ul li#nav-blog {
+    background-color: #317f8d;
+} 
+body#design ul li#nav-design {
+    background-color: #317f8d;
+} 
+body#program ul li#nav-program {
+    background-color: #317f8d;
+} 
 
 @media (max-width: 600px) {
     body {
@@ -56,3 +68,4 @@ nav ul li a:hover {
         text-overflow: ellipsis; /* 省略記号表示 */
     }
 }
+
