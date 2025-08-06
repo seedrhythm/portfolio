@@ -16,6 +16,7 @@ header {
     text-align: center;
 }
 
+
 nav ul {
     list-style-type: none;
     margin:0;
@@ -28,7 +29,8 @@ nav ul li {
     }
 nav ul li a {
     display: block;
-    }
+	text-aline: center;
+}
 nav ul li a:hover {
     background-color: #FFC0CB;
-    }
+}
