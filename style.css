@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;   
+    width: 800px;
 }
 h1, h2 {
     color: #333;
@@ -16,21 +17,21 @@ header {
     text-align: center;
 }
 
-
 nav ul {
     list-style-type: none;
     margin:0;
 	overflow: hidden;
 }        
 nav ul li {
+    margin-right: 3px;
     width:20%;
 	height: 110%;
 	float: left;
     }
 nav ul li a {
     display: block;
-	text-aline: center;
-}
+    text-align: center;
+    }
 nav ul li a:hover {
     background-color: #FFC0CB;
-}
+    }
