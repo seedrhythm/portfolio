@@ -15,13 +15,20 @@ header {
     padding: 20px 0;
     text-align: center;
 }
-nav {
+
+nav ul {
+    list-style-type: none;
+    margin:0;
 	overflow: hidden;
-    }
+}        
 nav ul li {
-	height: 100%;
+    width:20%;
+	height: 110%;
 	float: left;
     }
+nav ul li a {
+    display: block;
+    }
 nav ul li a:hover {
-    background-color: #252525
+    background-color: #FFC0CB;
     }
