@@ -3,64 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仮名の試行錯誤ポートフォリオサイト</title>
+    <title>news | 仮名の試行錯誤ポートフォリオサイト</title>
     <meta name="description" content="HTML・CSS・JavaScriptを学習中のWeb製作者のポートフォリオサイトです。">
     <meta name="author" content="仮名">
-      <!-- 検索結果に表示されやすくする -->
     <meta name="robots" content="index, follow">
-
-    <!-- SNS共有時に表示されるOGP設定（例: Facebook、Xなど） -->
-    <meta property="og:title" content="仮名 | Webポートフォリオ">
+    <meta property="og:title" content="news | 仮名 | Webポートフォリオ">
     <meta property="og:description" content="学習中のWeb制作者の作品集です。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://seedrhythm.github.io/portfolio">
     <meta property="og:image" content="https://seedrhythm.github.io/portfolio/ogp.jpg">
-
-    <!-- Twitterカード用（任意） -->
     <meta name="twitter:card" content="summary_large_image">
-
     <link rel="stylesheet" href="style.css">
+    <style>
+        .article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            margin: 24px 0;
+            padding: 20px;
+        }
+        .progress-img-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 12px 0;
+        }
+        .progress-img-item {
+            flex: 1 1 220px;
+            max-width: 48%;
+            min-width: 180px;
+            text-align: center;
+        }
+        .progress-img {
+            max-width: 100%;
+            max-height: 400px;  /* 画像の最大高さを制限 */
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;     /* 拡大用のヒント */
+        }
+        .progress-caption {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 600px) {
+            .progress-img-group {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .progress-img-item {
+                max-width: 100%;
+                min-width: 0;
+            }
+        }
+    </style>
 </head>
-
 <body id="news">
 
 <nav>
     <ul>
-        <li id="nav-news"><a href='news.html'>ニュース</a></li>
-        <li><a href='blog.html'>記事</a></li>
-        <li><a href='design.html'>デザイン</a></li>
-        <li><a href='program.html'>プログラム</a></li>
+        <li id="nav-news"><a href="news.html">ニュース</a></li>
+        <li><a href="blog.html">記事</a></li>
+        <li><a href="design.html">デザイン</a></li>
+        <li><a href="program.html">プログラム</a></li>
     </ul>
 </nav>
-    <h1>ポートフォリオサイトへようこそ</h1>
+
+<h1>ニュース・進捗レポート</h1>
+
+<div class="article">
+    <h2>2025年8月8日：ニュース・進捗ページを作成</h2>
     <p>
-    現在、HTML・CSS・JavaScriptを中心にWeb制作の技術を学んでいます。<br>
-    このサイトは、学習の過程で制作した成果物や技術の習得状況をまとめたポートフォリオです。
+        今後はこのページで、作業の進捗や学習内容を記事形式でまとめていきます。<br>
+        更新時間が日を跨いでいますが、（諸々あり、）ほとんど作業をchatGPTに頼りました。<br>
+        一瞬でこんなにしっかりしたものを作ってくれるのは脅威。<br>
+        しかし手の込んだものを頼むとソースが複雑になり、後のことを考えると少し心配。
     </p>
+    <div class="progress-img-group">
+        <div class="progress-img-item">
+            <img src="images/progress_20250808_1.png" alt="進捗画像" class="progress-img">
+            <div class="progress-caption">作業途中のため云々</div>
+        </div>
+        <div class="progress-img-item">
+            <img src="images/progress_20250808_2.jpg" alt="スマホ画面" class="progress-img">
+            <div class="progress-caption">まだ見にくいですね</div>
+        </div>
+    </div>
+</div>
 
+<div class="article">
+    <h2>2025年8月7日：What's New欄の追加と進捗</h2>
     <p>
-    将来的には、Webデザイナーおよびフロントエンドエンジニアとして活動することを目指しており、<br>
-    デザインと実装の両面からユーザーに価値を届けられるクリエイターを志しています。
+        サイトトップに「What's New」欄を追加しました。
     </p>
+    <div class="progress-img-group">
+        <div class="progress-img-item">
+            <img src="images/progress_20250807_1.png" alt="進捗画像" class="progress-img">
+            <div class="progress-caption">連絡先と順番を入れ替えたほうがいいですね</div>
+        </div>
+    </div>
+</div>
 
+<div class="article">
+    <h2>2025年8月6日：ナビゲーション追加・雑なレスポンシブ対応</h2>
     <p>
-    まだ道半ばであり、また名前をどのようするかについても悩んでいる最中ではありますが、<br>
-    一つ一つの課題に丁寧に取り組み、確実にスキルを積み重ねていくつもりです。<br>
-    ご覧いただき、ありがとうございます。<br>
-    またの訪問を心よりお待ちいたしております。
+        ナビゲーションのレイアウトをスマホ対応に変更しました。<br>
+        index.htmlについては極シンプルを貫くつもりです。<br>
+        将来的に、まともといえるレスポンシブ対応を行う予定です。
     </p>
+    <div class="progress-img-group">
+        <div class="progress-img-item">
+            <img src="images/progress_20250806_1.png" alt="CSS調整のスクリーンショット" class="progress-img">
+            <div class="progress-caption">スマホ表示時のナビゲーション例</div>
+        </div>
+        <div class="progress-img-item">
+            <a href="images/progress_20250806_2.jpg" target="_blank">
+            <img src="images/progress_20250806_2.jpg" alt="スマホ進捗画像" class="progress-img"></a>
+            <div class="progress-caption">ナビが中心からズレる問題</div>
+        </div>
+    </div>
+</div>
 
-    <h2>自己紹介</h2>
-    <ul>
-    <li>名前：（仮名）</li>
-    <li>学習中の分野：HTML / CSS / JavaScript</li>
-    <li>興味のある分野：UI設計・アクセシビリティ・フロントエンド開発全般</li>
-    <li>目標：Webデザインとプログラミングの両方を扱えるプロフェッショナルになること</li>
-    <li>好きな俳優：阿部寛</li>
-    </ul>
-    <h2>連絡先</h2>
-    <address>s👀👀drhythm◎gmail●com （◎を@に、●を.に、👀をeに変えてください）</address>
-</body>
+<div class="article">
+    <h2>2025年8月5日：ポートフォリオサイト公開</h2>
+    <p>
+        まずはシンプルなサイトを作ろうと思い、なんの装飾もないものを作成。<br>これから毎日のように改善していきたい。
+    </p>
+    <div class="progress-img-group">
+        <div class="progress-img-item">
+            <img src="images/progress_20250805_1.png" alt="初期デザイン" class="progress-img">
+            <div class="progress-caption">初期デザイン</div>
+        </div>
+    </div>
+</div>
 
-</html>
-
+<h2>連絡先</h2>
+<address>s👀👀drhythm◎gmail●com （◎を@に、●を.に、👀をeに変えてください）</address>
