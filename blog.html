@@ -3,64 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仮名の試行錯誤ポートフォリオサイト</title>
+    <title>記事 | 仮名の試行錯誤ポートフォリオサイト</title>
     <meta name="description" content="HTML・CSS・JavaScriptを学習中のWeb製作者のポートフォリオサイトです。">
     <meta name="author" content="仮名">
-      <!-- 検索結果に表示されやすくする -->
     <meta name="robots" content="index, follow">
-
-    <!-- SNS共有時に表示されるOGP設定（例: Facebook、Xなど） -->
-    <meta property="og:title" content="仮名 | Webポートフォリオ">
+    <meta property="og:title" content="記事 | 仮名 | Webポートフォリオ">
     <meta property="og:description" content="学習中のWeb制作者の作品集です。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://seedrhythm.github.io/portfolio">
     <meta property="og:image" content="https://seedrhythm.github.io/portfolio/ogp.jpg">
-
-    <!-- Twitterカード用（任意） -->
     <meta name="twitter:card" content="summary_large_image">
-
     <link rel="stylesheet" href="style.css">
+    <style>
+        .article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            margin: 24px 0;
+            padding: 20px;
+        }
+        .progress-img-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 12px 0;
+        }
+        .progress-img-item {
+            flex: 1 1 220px;
+            max-width: 48%;
+            min-width: 180px;
+            text-align: center;
+        }
+        .progress-img {
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .progress-caption {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 600px) {
+            .progress-img-group {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .progress-img-item {
+                max-width: 100%;
+                min-width: 0;
+            }
+        }
+    </style>
 </head>
-
 <body id="blog">
 
 <nav>
     <ul>
-        <li><a href='news.html'>ニュース</a></li>
-        <li id="nav-blog"><a href='blog.html'>記事</a></li>
-        <li><a href='design.html'>デザイン</a></li>
-        <li><a href='program.html'>プログラム</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li id="nav-blog"><a href="blog.html">記事</a></li>
+        <li><a href="design.html">デザイン</a></li>
+        <li><a href="program.html">プログラム</a></li>
     </ul>
 </nav>
-    <h1>ポートフォリオサイトへようこそ</h1>
-    <p>
-    現在、HTML・CSS・JavaScriptを中心にWeb制作の技術を学んでいます。<br>
-    このサイトは、学習の過程で制作した成果物や技術の習得状況をまとめたポートフォリオです。
-    </p>
 
-    <p>
-    将来的には、Webデザイナーおよびフロントエンドエンジニアとして活動することを目指しており、<br>
-    デザインと実装の両面からユーザーに価値を届けられるクリエイターを志しています。
-    </p>
+<h1>記事・学習ブログ</h1>
 
+<div class="article">
+    <h2>2025年8月9日：ブログページ作成</h2>
     <p>
-    まだ道半ばであり、また名前をどのようするかについても悩んでいる最中ではありますが、<br>
-    一つ一つの課題に丁寧に取り組み、確実にスキルを積み重ねていくつもりです。<br>
-    ご覧いただき、ありがとうございます。<br>
-    またの訪問を心よりお待ちいたしております。
+        ブログページを開始していきます。<br>
+        ひとまずニュース・進捗ページと同じフォーマットで作成しました。<br>
+        学習内容や気づき、進捗などのほか、地域の話題などを記録していく予定です。<br>
+        書きたかった内容があるので、今後数日はその内容を描くことが、<br>
+        このポートフォリオサイトの活動になるかもしれません。<br><br>
+        私は本日からお盆休みスタート。地域の子供向けの科学のイベントを見に行きました。<br>
+        時間的余裕はありませんでしたが、かなり見どころがあり、<br>
+        液体窒素のパフォーマンスを見て、科学の面白さを再確認しました。<br>
+        クジラの全身の骨格を見れたのもよかった。<br><br>
+        また本日は満月の日、スタージョンムーン。曇っておらず、スマホできれいに撮影できました。
     </p>
+    <div class="progress-img-group">
+        <div class="progress-img-item">
+            <img src="blog_20250809_1.jpg" alt="ブログ初期画面" class="progress-img">
+            <div class="progress-caption">とにかく面白い人でした。</div>
+        </div>
+        <div class="progress-img-item">
+            <img src="blog_20250809_2.jpg" alt="学習メモ" class="progress-img">
+            <div class="progress-caption">どことなく歪な月</div>
+        </div>
+    </div>
+</div>
 
-    <h2>自己紹介</h2>
-    <ul>
-    <li>名前：（仮名）</li>
-    <li>学習中の分野：HTML / CSS / JavaScript</li>
-    <li>興味のある分野：UI設計・アクセシビリティ・フロントエンド開発全般</li>
-    <li>目標：Webデザインとプログラミングの両方を扱えるプロフェッショナルになること</li>
-    <li>好きな俳優：阿部寛</li>
-    </ul>
-    <h2>連絡先</h2>
-    <address>s👀👀drhythm◎gmail●com （◎を@に、●を.に、👀をeに変えてください）</address>
+<h2>連絡先</h2>
+<address>s👀👀drhythm◎gmail●com （◎を@に、●を.に、👀をeに変えてください）</address>
 </body>
-
 </html>
-
